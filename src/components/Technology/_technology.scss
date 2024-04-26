@@ -1,0 +1,21 @@
+.technology__wrapper {
+    background-color: #0284c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 150px;
+    height: 32px;
+    border-radius: 6px;
+    margin: 6px 12px 6px 0;
+    padding: 0 14px;
+
+    .technology__icon__wrapper {
+        margin-right: 6px;
+    }
+
+    .technology__name {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+    }
+}

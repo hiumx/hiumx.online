@@ -1,0 +1,26 @@
+.about__wrapper {
+    .about__content {
+        .about__avatar__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .about__avatar {
+                width: 146px;
+                height: 146px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+        .about__desc {
+            p {
+                font-size: 16px;
+                font-weight: 600;
+                margin: 18px 0;
+                text-align: start;
+            }
+        }
+    }
+
+}

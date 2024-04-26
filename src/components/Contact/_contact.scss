@@ -1,0 +1,36 @@
+.contact__wrapper {
+    .contact__socials {
+        .contact__socials--list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .contact__socials--item {
+                margin: 0 14px;
+                padding: 0 4px;
+                cursor: pointer;
+
+                .youtube__icon {
+                    fill: #CE1312;
+                }
+
+                .facebook__icon {
+                    fill: #648eef;
+                }
+
+                .linkedin__icon {
+                    fill: #007EBB;
+                }
+
+                .email__icon {
+                    fill: #DA9621;
+                }
+
+                .github__icon {
+                    fill: #ffffff;
+                }
+            }
+        }
+    }
+}
