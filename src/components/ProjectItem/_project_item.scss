@@ -1,12 +1,13 @@
 .project__item__wrapper {
     transition: transform 0.3s ease;
     margin: 18px 0;
+    height: 492px;
 
     .project__item__img {
         width: 100%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        max-height: 210px;
+        height: 210px;
     }
 
     .project__item__desc {
@@ -14,6 +15,7 @@
         background-color: var(--background-primary-color);
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+        height: 324px;
 
         .project__item__name {
             color: var(--primary-color);
@@ -30,6 +32,11 @@
         .project__item__detail {
             color: var(--primary-color);
             margin-top: 8px;
+            display: -webkit-box; 
+            -webkit-box-orient: vertical; 
+            overflow: hidden; 
+            -webkit-line-clamp: 5 ; 
+            text-overflow: ellipsis; 
         }
     }
 
