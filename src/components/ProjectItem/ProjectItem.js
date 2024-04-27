@@ -9,7 +9,7 @@ export default function ProjectItem({
     prjLink = '#'
 }) {
     return (
-        <div className='project__item__wrapper col-lg-4'>
+        <div className='project__item__wrapper col-xl-4 col-lg-6 col-sm-12 col-12'>
             <a href={prjLink}>
                 <img className='project__item__img'
                     src={imageSrc}

@@ -42,6 +42,12 @@
     }
 }
 
+@media only screen and (max-width: 992px) {
+    .navigation {
+        font-size: 18px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .navigation__list {
         padding: 0 10px !important;
@@ -65,3 +71,4 @@
         padding: 0 10px !important;
     }
 }
+

@@ -1,7 +1,6 @@
 .project__item__wrapper {
     transition: transform 0.3s ease;
     margin: 18px 0;
-    height: 492px;
 
     .project__item__img {
         width: 100%;
@@ -15,7 +14,6 @@
         background-color: var(--background-primary-color);
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-        height: 324px;
 
         .project__item__name {
             color: var(--primary-color);
@@ -42,5 +40,15 @@
 
     &:hover {
         transform: scale(1.04);
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .project__item__wrapper {
+        height: 492px;
+
+        .project__item__desc {
+            height: 324px;
+        }
     }
 }
