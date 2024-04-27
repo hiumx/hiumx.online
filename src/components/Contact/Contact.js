@@ -4,7 +4,7 @@ import './_contact.scss';
 
 export default function Contact() {
     return (
-        <div className='contact__wrapper'>
+        <div className='contact__wrapper' id='contact'>
             <Title title='Contact' />
             <div className='contact__socials'>
                 <ul className='contact__socials--list'>

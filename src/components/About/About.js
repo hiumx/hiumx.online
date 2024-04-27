@@ -4,7 +4,7 @@ import images from '~/assets/images';
 
 export default function About() {
     return (
-        <div className='about__wrapper'>
+        <div className='about__wrapper' id='about'>
             <Title title='About' />
             <div className='about__content row'>
                 <div className='about__avatar__wrapper col-lg-3'>
