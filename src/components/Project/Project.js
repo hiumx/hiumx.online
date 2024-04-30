@@ -32,7 +32,7 @@ export default function Project() {
             name: 'ElasticSearch',
             icon: <ElasticSearchIcon className='svg__icon elasticsearch__icon' />
         },
-    ]; 
+    ];
 
     const techProjBookingCareFE = [
         {
@@ -72,33 +72,44 @@ export default function Project() {
         },
     ];
 
+    const projects = [
+        {
+            imageSrc: 'eCommerce',
+            name: 'E-commerce Back-end',
+            technologies: techProjECommerce,
+            detail: 'The system is architected with Micro-services Architecture, employing Rabbit MQ to manage order tasks like payment authentication, inventory updates, and dispatching order confirmation emails',
+            prjLink: 'https://github.com/hiumx/ecommerce-backend'
+        },
+        {
+            imageSrc: 'bookingCareBE',
+            name: 'Booking Care Back-end',
+            technologies: techProjBookingCareBE,
+            detail: 'An efficient back-end system to manage appointment schedules, doctor information, and patient records for a clinic.',
+            prjLink: 'https://github.com/hiumx/booking-care-nodejs'
+        },
+        {
+            imageSrc: 'bookingCareFE',
+            name: 'Booking Care Front-end',
+            technologies: techProjBookingCareFE,
+            detail: 'Design a user interface for appointment scheduling and a management platform for doctors to view schedules and patient information',
+            prjLink: 'https://github.com/hiumx/booking-care-react'
+        },
+    ]
+
     return (
         <div className='project__wrapper' id='projects'>
             <Title title='Projects' />
             <div className='row'>
-                <ProjectItem
-                    imageSrc={images.eCommerce}
-                    name='E-commerce Back-end'
-                    technologies={techProjECommerce}
-                    detail='The system is architected with Micro-services
-                    Architecture, employing Rabbit MQ to manage order tasks like payment authentication, inventory updates, and
-                    dispatching order confirmation emails'
-                    prjLink='https://github.com/hiumx/ecommerce-backend'
-                />
-                <ProjectItem
-                    imageSrc={images.bookingCareBE}
-                    name='Booking Care Back-end'
-                    technologies={techProjBookingCareBE}
-                    detail='An efficient back-end system to manage appointment schedules, doctor information, and patient records for a clinic.'
-                    prjLink='https://github.com/hiumx/booking-care-nodejs'
-                />
-                <ProjectItem
-                    imageSrc={images.bookingCareFE}
-                    name='Booking Care Front-end'
-                    technologies={techProjBookingCareFE}
-                    detail='Design a user interface for appointment scheduling and a management platform for doctors to view schedules and patient information'
-                    prjLink='https://github.com/hiumx/booking-care-react'
-                />
+                {projects?.map((proj, idx) =>
+                    <ProjectItem
+                        key={idx}
+                        imageSrc={images[proj.imageSrc]}
+                        name={proj.name}
+                        technologies={proj.technologies}
+                        detail={proj.detail}
+                        prjLink={proj.prjLink}
+                    />
+                )}
             </div>
             <a className='project__see__more' href='https://github.com/hiumx'>See more in my Github</a>
         </div>
