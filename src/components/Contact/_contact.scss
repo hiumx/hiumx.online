@@ -5,6 +5,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin: 0;
+            padding: 0;
 
             .contact__socials--item {
                 margin: 0 14px;
@@ -33,4 +35,13 @@
             }
         }
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact__wrapper {
+        .contact__socials--item {
+            margin: 0 6px !important;
+        }
+    }
+
 }

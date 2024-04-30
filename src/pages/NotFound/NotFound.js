@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './_not_found.scss';
 import Button from '~/components/Button/Button';
 
