@@ -16,7 +16,7 @@ export default function About() {
                     />
                 </div>
                 <div className='about__desc col-lg-9'>
-                    <p>I’m from Vietnam, started programming in 2021 and turned it into a hobby</p>
+                    <p>I'm from Vietnam, started programming in 2021 and turned it into a hobby</p>
                     <p>My focus is fullstack web development, but I also create and explore other fields such as Data Science, Solution Architecture</p>
                     <p>Besides from programming, I also listen to music, do exercise, read the book and learn about business and finance</p>
                 </div>

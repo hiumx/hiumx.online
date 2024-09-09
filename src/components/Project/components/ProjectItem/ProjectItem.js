@@ -1,5 +1,5 @@
 import './_project_item.scss';
-import Technology from '../Technology/Technology';
+import Technology from '../../../Technology/Technology';
 
 export default function ProjectItem({
     imageSrc,
