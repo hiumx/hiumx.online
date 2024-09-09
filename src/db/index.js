@@ -65,6 +65,25 @@ export const TECHS_PROJECT_BOOKING_CARE_BE = [
     },
 ];
 
+export const TECHS_PROJECT_BOOKING_HOTEL_BE = [
+    {
+        name: 'NodeJS',
+        icon: <NodeJSIcon className='svg__icon nodejs__icon' />
+    },
+    {
+        name: 'MySQL',
+        icon: <MySQLIcon className='svg__icon mysql__icon' />
+    },
+    {
+        name: 'Elasticsearch',
+        icon: <ElasticSearchIcon className='svg__icon mysql__icon' />
+    },
+    {
+        name: 'Kafka',
+        icon: <MySQLIcon className='svg__icon mysql__icon' />
+    },
+];
+
 export const PROJECTS = [
     {
         imageSrc: 'eCommerce',
@@ -93,15 +112,15 @@ export const GROUP_PROJECTS = [
     {
         imageSrc: 'bookingHotelBE',
         name: 'Booking Hotel Platform Back-end',
-        technologies: TECHS_PROJECT_BOOKING_CARE_BE,
-        detail: 'A powerful backend system for users to search and book hotels, utilizing a Micro-services architecture with an independent notification system and communication through Apache Kafka.',
+        technologies: TECHS_PROJECT_BOOKING_HOTEL_BE,
+        detail: 'Use Elasticsearch to deploy a powerful search system to meet user search needs. Design a microservices architecture with a diverse, independent notification system and services that communicate with each other via Apache Kafka.',
         prjLink: 'https://github.com/hiumx/booking-backend'
     },
     {
         imageSrc: 'bookingHotelFE',
         name: 'Booking Hotel Platform Front-end',
         technologies: TECHS_PROJECT_BOOKING_CARE_FE,
-        detail: 'Interfaces for the homepage, search results, and hotel details to be user-friendly and enhance the overall user experience.',
+        detail: 'React components are used to build interactive and flexible user interfaces. Redux manages the application state, while Bootstrap enables rapid interface design. To optimize performance, lazy-loading techniques.',
         prjLink: 'https://github.com/hiumx/booking-client'
     },
 ];

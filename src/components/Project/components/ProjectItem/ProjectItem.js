@@ -10,7 +10,7 @@ export default function ProjectItem({
 }) {
     return (
         <div className='project__item__wrapper col-xl-4 col-lg-6 col-sm-12 col-12'>
-            <a href={prjLink}>
+            <a href={prjLink} target='_blank'>
                 <img className='project__item__img'
                     src={imageSrc}
                     lt='project-img'
