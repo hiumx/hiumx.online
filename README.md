@@ -4,7 +4,7 @@ Hello, and welcome to my hiumx.online project! 🙌
 
 ## About Me
 
-I'm **[Hieu Mai Xuan]**, a passionate developer focused on creating dynamic and interactive web applications using modern technologies like React, NodeJS, Springboot, Golang...
+I'm **Hieu Mai Xuan**, a passionate developer focused on creating dynamic and interactive web applications using modern technologies like React, NodeJS, Springboot, Golang...
 
 I specialize in building **responsive, user-friendly web applications** and enjoy working on both the front-end and back-end aspects of development.
 
@@ -21,9 +21,9 @@ I specialize in building **responsive, user-friendly web applications** and enjo
 This project is a **React-based web application** where I aim to introduce myseft. It's built with the goal of showcasing my skills in React development, state management, and overall web design.
 
 ### Features:
-- [Feature 1: e.g., Real-time data updates]
-- [Feature 2: e.g., Interactive UI components]
-- [Feature 3: e.g., Responsive design for mobile and desktop]
+- [Feature 1: Real-time data updates]
+- [Feature 2: Interactive UI components]
+- [Feature 3: Responsive design for mobile and desktop]
 
 ## How to Run the Project
 
