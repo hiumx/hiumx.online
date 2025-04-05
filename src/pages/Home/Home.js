@@ -1,4 +1,5 @@
 
+import Experience from '~/components/Experience/Experience';
 import About from '../../components/About/About';
 import Contact from '../../components/Contact/Contact';
 import Introduction from '../../components/Introduction/Introduction';
@@ -12,10 +13,10 @@ export default function Home() {
         <div className='home__wrapper'>
             <MainLayout>
                 <Introduction />
+                {/* <Experience /> */}
                 <Project title='Personal Project' projects={PROJECTS} />
                 <Project title='Group Project' projects={GROUP_PROJECTS} />
                 <About />
-                {/* <Experience /> */}
                 <Contact />
             </MainLayout>
         </div>

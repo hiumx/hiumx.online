@@ -1,0 +1,16 @@
+@mixin slide-in-left($time: 0.8s, $animation: ease-out) {
+    animation: slideIn $time $animation forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        left: -25%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+}

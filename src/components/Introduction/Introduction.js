@@ -10,7 +10,7 @@ export default function Introduction() {
                 <h3>Software Engineer | DevOps Engineer</h3>
                 <Button
                     type='href'
-                    href='https://drive.google.com/file/d/1aqFIG7FW49KCODmWrBu1jOdTw_TR5koB/view?usp=drive_link'
+                    href='https://drive.google.com/file/d/1GGt92Zg0D297E1ie9RD3vUb3nbvhku7Z/view?usp=sharing'
                 >
                     My Resume
                 </Button>

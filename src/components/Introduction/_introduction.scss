@@ -1,7 +1,11 @@
+@import "../../styles/mixins.scss";
+
 .introduction__wrapper {
+    position: relative;
     text-align: center;
     color: var(--primary-color);
     padding: 130px 0 42px;
+    @include slide-in-left;
 
     h1 {
         font-size: 36px;
