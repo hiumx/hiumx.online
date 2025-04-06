@@ -2,14 +2,14 @@
 
 .title__wrapper {
     border-top: 2px solid #767676;
-    
+
     .title__name {
         position: relative;
         color: var(--secondary-color);
         font-size: 36px;
         font-weight: 700;
         text-align: center;
-        padding: 34px 0;
+        padding: 34px 0 20px;
         @include slide-in-left;
     }
 }

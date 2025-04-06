@@ -11,9 +11,9 @@
     text-decoration: none;
     display: inline-block;
     margin: 32px 0;
+    transition: opacity 0.2s ease-out;
 
     &:hover {
         opacity: 0.8;
     }
-
 }

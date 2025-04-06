@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './_button.scss';
 
-export default function Button({ type = 'link', children, href = '/' }) {
+export default function Button({ type = 'link', children, href = '/', target = '_self' }) {
     return (
         <>
             {
@@ -9,6 +9,7 @@ export default function Button({ type = 'link', children, href = '/' }) {
                     ? <a
                         href={href}
                         className='button__btn'
+                        target={target}
                     >
                         {children}
                     </a>

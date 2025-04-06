@@ -1,5 +1,10 @@
+@import "../../styles/mixins.scss";
+
 .about__wrapper {
     .about__content {
+        padding-bottom: 16px;
+
+        @include slide-in-top;
         .about__avatar__wrapper {
             display: flex;
             align-items: center;

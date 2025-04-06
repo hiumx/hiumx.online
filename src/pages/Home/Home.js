@@ -13,7 +13,7 @@ export default function Home() {
         <div className='home__wrapper'>
             <MainLayout>
                 <Introduction />
-                {/* <Experience /> */}
+                <Experience />
                 <Project title='Personal Project' projects={PROJECTS} />
                 <Project title='Group Project' projects={GROUP_PROJECTS} />
                 <About />

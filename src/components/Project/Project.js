@@ -9,7 +9,7 @@ function Project({ title, projects }) {
     return (
         <div className='project__wrapper' id='projects'>
             <Title title={title} />
-            <div className='row'>
+            <div className='project__list row'>
                 {projects?.map((proj, idx) =>
                     <ProjectItem
                         key={idx}
@@ -21,7 +21,13 @@ function Project({ title, projects }) {
                     />
                 )}
             </div>
-            <a className='project__see__more' href='https://github.com/hiumx'>See more in my Github</a>
+            <a
+                className='project__see__more'
+                href='https://github.com/hiumx'
+                target='_blank'
+            >
+                See more in my Github
+            </a>
         </div>
     )
 };

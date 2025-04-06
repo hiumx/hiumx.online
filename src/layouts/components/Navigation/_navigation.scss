@@ -17,20 +17,19 @@
         width: 80%;
         margin: 10px auto;
         padding: 0;
-        transition: margin 0.3s ease-in-out, width 0.3s ease-in-out,
-            border-radius 0.3s ease-in-out, transform 0.3s ease;
+        transition: margin 0.2s ease-in-out, width 0.2s ease-in-out,
+            border-radius 0.2s ease-in-out, transform 0.2s ease;
 
         .navigation__item--link {
             color: var(--primary-color);
             text-decoration: none;
             font-weight: 700;
             cursor: pointer;
+            transition: color 0.2s ease-in-out;
 
             &:hover {
                 color: var(--secondary-color);
             }
-
-            .navigation__item {}
         }
     }
 
@@ -53,10 +52,6 @@
         padding: 0 10px !important;
         height: 86% !important;
 
-        .navigation__item__exp {
-            display: none;
-        }
-
         .navigation__item {
             line-height: 36px !important;
 
@@ -72,3 +67,8 @@
     }
 }
 
+@media only screen and (width <=510px) {
+    .navigation__item--link {
+        font-size: 12.5px !important;
+    }
+}

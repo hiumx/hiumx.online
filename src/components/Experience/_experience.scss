@@ -1,3 +1,46 @@
+@import "../.../../../styles/mixins.scss";
+
 .experience {
     color: #fff;
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+
+        &--link {
+            text-decoration: none;
+            color: rgb(100 181 228);
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: var(--secondary-color);
+            }
+        }
+    }
+
+    &__detail {
+        padding: 0 0 40px;
+
+        @include slide-in-top;
+    }
+
+    &__time {
+        font-size: 14px;
+    }
+
+    &__job-list {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    &__job-detail {
+        font-size: 15px;
+        margin-top: 16px;
+        font-weight: 600;
+
+        span {
+            margin-right: 4px;
+        }
+    }
 }

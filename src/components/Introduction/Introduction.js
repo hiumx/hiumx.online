@@ -3,7 +3,7 @@ import './_introduction.scss';
 
 export default function Introduction() {
     return (
-        <div className='introduction__wrapper' id='introduction'>
+        <div className='introduction__wrapper' name='introduction'>
             <h1>Xin chao,</h1>
             <h1>I'm <span>Hieu Mai Xuan</span></h1>
             <div className='introduction__programming__info'>
@@ -11,6 +11,7 @@ export default function Introduction() {
                 <Button
                     type='href'
                     href='https://drive.google.com/file/d/1GGt92Zg0D297E1ie9RD3vUb3nbvhku7Z/view?usp=sharing'
+                    target='_blank'
                 >
                     My Resume
                 </Button>
