@@ -1,12 +1,8 @@
-@import "../../../styles/mixins.scss";
-
 .footer__wrapper {
     color: var(--primary-color);
     font-size: 16px;
     text-align: center;
     margin: 32px 0 50px;
-
-    @include slide-in-top;
 
     span {
         font-weight: 600;

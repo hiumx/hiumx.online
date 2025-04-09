@@ -1,5 +1,3 @@
-@import "../../styles/mixins.scss";
-
 .project {
     &__wrapper .project__see__more {
         text-decoration: none;
@@ -15,9 +13,5 @@
         &:hover {
             color: var(--secondary-color);
         }
-    }
-
-    &__list {
-        @include slide-in-top;
     }
 }

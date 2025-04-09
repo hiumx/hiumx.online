@@ -1,9 +1,5 @@
-@import "../../styles/mixins.scss";
-
 .contact__wrapper {
     .contact__socials {
-        @include slide-in-top;
-
         .contact__socials--list {
             list-style: none;
             display: flex;
