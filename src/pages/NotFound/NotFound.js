@@ -13,7 +13,7 @@ export default function NotFound() {
                     <Button href='/'>Access the homepage</Button>
                 </div>
             </div>
-            <p className='notfound_copyright'>© 2024 hieumaixuan</p>
+            <p className='notfound_copyright'>© 2025 hieumaixuan</p>
         </div>
     )
 }

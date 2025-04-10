@@ -14,7 +14,7 @@ function App() {
     <>
     <Router>
       <Routes>
-        <Route exact path="/" element={<Home />}/>
+        <Route path="/" element={<Home />}/>
         <Route path="*" element={<NotFound />}/>
       </Routes>
     </Router>
