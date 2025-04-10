@@ -22,16 +22,16 @@ jobs:
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/hiumx.online:latest
 
-      - name: Save SSH key
+      - name: Save EC2 SSH key
         run: |
-          echo -e "${{ secrets.EC2_KEY }}" > ec2_key.pem
+          printf '%s\n' "${{ secrets.EC2_KEY }}" > ec2_key.pem
           chmod 600 ec2_key.pem
 
       - name: SSH into EC2 and deploy
         run: |
           ssh -tt -o StrictHostKeyChecking=no -i ec2_key.pem ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
-            docker pull ${{ secrets.DOCKER_USERNAME }}/hiumx.online:latest
-            docker stop hiumx.online || true
-            docker rm hiumx.online || true
-            docker run -d -p 80:80 --name hiumx.online ${{ secrets.DOCKER_USERNAME }}/hiumx.online:latest
+            sudo docker pull ${{ secrets.DOCKER_USERNAME }}/hiumx.online:latest
+            sudo docker stop hiumx.online || true
+            sudo docker rm hiumx.online || true
+            sudo docker run --name hiumx.online -d -p 80:80 ${{ secrets.DOCKER_USERNAME }}/hiumx.online:latest
           EOF
