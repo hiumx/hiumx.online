@@ -24,7 +24,7 @@ jobs:
 
       - name: Save EC2 SSH key
         run: |
-          echo "${{ secrets.EC2_KEY }}" > ec2_key && c~`hmod 600 ec2_key
+          echo "${{ secrets.EC2_KEY }}" > ec2_key && chmod 600 ec2_key
         #   printf '%s\n' "${{ secrets.EC2_KEY }}" > ec2_key.pem
         #   chmod 600 ec2_key.pem
 
