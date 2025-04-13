@@ -5,6 +5,7 @@ const images = {
     bookingHotelFE: require('~/assets/images/booking_hotel_fe_img.png'),
     bookingHotelBE: require('~/assets/images/booking_hotel_be_img.jpg'),
     avatar: require('~/assets/images/avatar_2.jpg'),
+    anime_avatar: require('~/assets/images/anime_avatar.png')
 }
 
 export default images;
