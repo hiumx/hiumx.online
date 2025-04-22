@@ -15,6 +15,8 @@ RUN npm run build
 
 FROM nginx:alpine
 
+COPY nginx/default.conf /etc/nginx/conf.d/default.conf
+
 # ENV NGINXUSER=hiumxonline
 # ENV NGINXGROUP=hiumxonline
 

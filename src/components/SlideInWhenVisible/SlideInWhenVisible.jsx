@@ -3,9 +3,9 @@ import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 
-const SlideInWhenVisible = ({ childrenTop, childrenBottom, childrenRight }) => {
+const SlideInWhenVisible = ({ childrenTop, childrenBottom, childrenRight, triggerOnce = true }) => {
     const { ref, inView } = useInView({
-        triggerOnce: true,   // only animate the first time it comes into view
+        triggerOnce: triggerOnce,   // only animate the first time it comes into view
         threshold: 0.1,       // how much of it needs to be visible
     });
 

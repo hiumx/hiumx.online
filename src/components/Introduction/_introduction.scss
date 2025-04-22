@@ -1,21 +1,36 @@
-.introduction__wrapper {
-    position: relative;
-    text-align: center;
-    color: var(--primary-color);
-    padding: 130px 0 42px;
-
-    h1 {
-        font-size: 36px;
-        font-weight: 700;
-        margin: 4px 0;
+.introduction {
+    &__wrapper {
+        position: relative;
+        text-align: center;
+        color: var(--primary-color);
+        padding: 130px 0 16px;
+    
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin: 4px 0;
+        }
+    
+        h3 {
+            margin: 10px 0;
+            font-size: 22px;
+        }
+    
+        span {
+            color: var(--secondary-color);
+        }
     }
 
-    h3 {
-        margin: 10px 0;
-        font-size: 22px;
-    }
-
-    span {
-        color: var(--secondary-color);
+    &__overview {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
     }
 }
